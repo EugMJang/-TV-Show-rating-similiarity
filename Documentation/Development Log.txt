@@ -1,0 +1,15 @@
+Nov 14 - Nov 28
+Evan: Parsed data of every users ratings of every anime ever into a csv which details each users ratings of only the top 1001 anime. Created a second csv via web scraping which details a map from ids to names.
+David: Created a CSV file reader that takes in the CSV files Evan wrote and creates a vector of maps (each element of the vector corresponding to a different user) which maps each users ratings to each anime they have watched.  Also created a second map which links the ids to names of each anime for ease of access and front end work.
+Eugene: Created a graph class and graph node class with features such as adding and removing edges (each node representing a different anime).  Also helped with web scraping to create the csv.
+Summary: The graph class is taking longer than written, but we frontloaded the work load to allow for error and problems.  This coming week we will finish the graph by actually seeding it with the data that we recieved.
+Nov 29 - Dec 5
+Evan: Ran tests and created a funciton that uploads the csv data into the graph using David's strength function.
+David: Created a function that calculates the strength between different graph nodes using the previously created vector of maps and id-name map. 
+Eugene: Implemented the BFS algorithm however we later decided that our graph should use an adjacency matrix implementation instead of an adjacency list implementation.
+Summary: There were some complications with implementing the BFS alorithm however we will try to meet the rest of our goals in the following week such as implementing Dijkstra's algorithm and making a force directed graph.
+Dec 6 - Dec 12
+Evan: Created the force-directed graph using Hooke's Law and numerical methods.
+David: Implemented Dijkstra's algorithm to find the shortest path between two nodes
+Eugene: Cleaned up BFS/Graph class and wrote tests/documentation (we decided that an adjacency list implemetation is okay)
+Summary: Dijkstra's algorithm is not completely finished yet, but the force-directed graph looks good (with the absence of edges). Created Makefile for easy compilation and unit tests for testing suite environment. Will work on testing and documentation for tomorrow.
